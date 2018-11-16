@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimaryDark">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"/>
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:text="Booking Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_below="@id/toolbar"
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/blue">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/layoutTop" >
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/overlapImage"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_above="@id/layoutBottom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-30dp"
+            android:src="@drawable/download" />
+
+
+    <RelativeLayout
+        android:layout_below="@id/overlapImage"
+        android:layout_marginTop="60dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bookround"
+
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Booking ID"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="166"/>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:text="Name"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+
+                    android:text="raju"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:text="Provider Name"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:text="raju"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="Start Time"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+
+                    android:layout_weight="1"
+                    android:text="raju"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Service End Time"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                   android:layout_weight="1"
+                    android:text="raju"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:text="Sevice Location"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="raju"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:text="Price"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:text="raju"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:text="Total Amount"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="raju"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:text="Service Status"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+
+                    android:text="raju"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:text="Service Name"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:text="raju"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Booking Date"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="raju"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Invoice"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="raju"/>
+
+            </LinearLayout>
+<Button
+    android:layout_width="120dp"
+    android:layout_height="50dp"
+    android:background="@drawable/round"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="30dp"
+    android:textColor="#fff"
+    android:layout_marginBottom="20dp"
+    android:text="Click To Pay"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">RoziHubb</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTRATION</string>
+    <string name="forgetpass">FORGET PASSWORD?</string>
+
+    <string name="cofirmpass">Confirm Password</string>
+    <string name="createnew">Please creat your new password </string>
+    <string name="newpass">NEW PASSWORD</string>
+    <string name="resetpass">Reset Password</string>
+    <string name="forgtext">We just need your registered email addressto send you password reset</string>
+    <string name="otp">Will send yousix digit OTP to reset Password</string>
+    <string name="forgetmobile">E-mailId/Mobile Number</string>
+    <string name="reset">Reset</string>
+    <string name="email">"E-mail Address</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot">Forget Password?</string>
+    <string name="newhere">New Here? SignUp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
