@@ -10,7 +10,9 @@ import android.widget.TextView;
 public class LoginActivity extends AppCompatActivity  {
     TextView newuser;
 TextView forgatpassword;
+    Button test;
 Button login;
+Button next1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,5 +41,22 @@ Button login;
                startActivity(intent);
            }
        });
+        test=findViewById(R.id.test);
+        test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(LoginActivity.this,RoziHubProfessionals.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        next1=findViewById(R.id.test1);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(LoginActivity.this,ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -31,6 +31,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
+        android:elevation="5dp"
         android:background="@drawable/round1">
 
         <TextView
@@ -106,7 +107,23 @@
             android:text="@string/newhere"
             android:layout_marginBottom="30dp"
             />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newuser"
+            android:id="@+id/test"
+            android:text="next"/>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/test1"
+            android:layout_below="@id/newuser"
+            android:layout_toEndOf="@id/test"
+            android:layout_marginLeft="10dp"
+            android:text="next1"
+            android:layout_toRightOf="@id/test" />
 
     </RelativeLayout>
 

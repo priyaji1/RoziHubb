@@ -10,35 +10,28 @@ import android.view.WindowManager;
 
 
 
-public class SplashActivity extends AppCompatActivity {
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.app.Activity;
+public class SplashActivity extends Activity {
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.activity_splash);
-        if (Build.VERSION.SDK_INT < 16) {
-            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                    WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        } else {
-            View decorView = getWindow().getDecorView();
-            // Hide the status bar.
-            int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
-            decorView.setSystemUiVisibility(uiOptions);
-            // Remember that you should never show the action bar if the
-            // status bar is hidden, so hide that too if necessary.
-        }
-        int SPLASH_DISPLAY_LENGTH = 1000;
+
+        int SPLASH_DISPLAY_LENGTH = 700;
 
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run() {
 
-                Intent intent = new Intent(SplashActivity.this,LoginActivity.class);
-                startActivity(intent);
-                finish();
+                Intent mainIntent = new Intent(SplashActivity.this,LoginActivity.class);
+                SplashActivity.this.startActivity(mainIntent);
+                SplashActivity.this.finish();
             }
         }, SPLASH_DISPLAY_LENGTH);
     }
-
 }

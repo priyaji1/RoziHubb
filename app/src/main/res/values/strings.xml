@@ -17,7 +17,9 @@
     <string name="password">Password</string>
     <string name="forgot">Forget Password?</string>
     <string name="newhere">New Here? SignUp</string>
-
+    <string name="category_profess">TOP SPOTS</string>
+    <string name="category_center">RESTAURANTS</string>
+    <string name="category_service">RELIGIOUS</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">hello from frag</string>
 </resources>
